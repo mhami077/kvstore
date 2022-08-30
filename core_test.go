@@ -104,6 +104,4 @@ func TestDelete(t *testing.T) {
 	if contains {
 		t.Error("Delete failed")
 	}
-	
-	assert.Equal(t,1,1)
 }
