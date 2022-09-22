@@ -15,13 +15,13 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - source-v1-
+            - source-v2
       - checkout
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
       - save_cache:
-          key: source-v1-
+          key: source-v-
           paths:
             - ".git"
 
